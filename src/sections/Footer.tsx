@@ -74,7 +74,7 @@ export default function Footer() {
           <span>
             © {new Date().getFullYear()} {profile.name}
           </span>
-          <span>Built with Vite · React · Three.js</span>
+          <span>Source:github.com/Harish-SN/kwantumZero</span>
         </div>
       </div>
     </section>
