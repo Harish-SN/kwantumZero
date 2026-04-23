@@ -4,7 +4,7 @@ export default function Experience() {
   return (
     <section id="experience">
       <div className="shell">
-        <div className="label" style={{ marginBottom: 24 }}>── 02 / experience</div>
+        <div className="label" style={{ marginBottom: 24 }}>── 04 / experience</div>
         <h2 style={{ marginBottom: 56 }}>What I'm building.</h2>
 
         <div style={{ display: "grid", gap: 48 }}>

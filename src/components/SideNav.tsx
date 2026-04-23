@@ -1,10 +1,11 @@
 const items = [
   { href: "#top", label: "00" },
-  { href: "#certs", label: "01" },
-  { href: "#experience", label: "02" },
-  { href: "#projects", label: "03" },
-  { href: "#skills", label: "04" },
-  { href: "#contact", label: "05" },
+  { href: "#writing", label: "01" },
+  { href: "#projects", label: "02" },
+  { href: "#certs", label: "03" },
+  { href: "#experience", label: "04" },
+  { href: "#skills", label: "05" },
+  { href: "#contact", label: "06" },
 ];
 
 export default function SideNav() {

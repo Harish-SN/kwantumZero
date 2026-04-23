@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <section id="projects">
       <div className="shell">
-        <div className="label" style={{ marginBottom: 24 }}>── 03 / projects</div>
+        <div className="label" style={{ marginBottom: 24 }}>── 02 / projects</div>
         <h2 style={{ marginBottom: 56 }}>Open-source & lab work.</h2>
 
         <div style={{ display: "grid", gap: 0 }}>

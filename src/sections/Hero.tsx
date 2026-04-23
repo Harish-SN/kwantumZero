@@ -23,26 +23,6 @@ export default function Hero() {
         <p style={{ fontSize: 16, maxWidth: "54ch", color: "var(--text-dim)" }}>
           {profile.tagline}
         </p>
-
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: 20,
-            marginTop: 12,
-            fontFamily: "var(--font-mono)",
-            fontSize: 12,
-            letterSpacing: "0.08em",
-            textTransform: "uppercase",
-          }}
-        >
-          <a href={profile.emailHref}>{profile.email} ↗</a>
-          {profile.socials.map((s) => (
-            <a key={s.label} href={s.href} target="_blank" rel="noreferrer">
-              {s.label} ↗
-            </a>
-          ))}
-        </div>
       </div>
     </section>
   );

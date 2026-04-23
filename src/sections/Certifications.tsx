@@ -10,7 +10,7 @@ export default function Certifications() {
   return (
     <section id="certs">
       <div className="shell">
-        <div className="label" style={{ marginBottom: 24 }}>── 01 / certifications</div>
+        <div className="label" style={{ marginBottom: 24 }}>── 03 / certifications</div>
         <h2 style={{ marginBottom: 48, maxWidth: "18ch" }}>
           On the road to <em style={{ color: "var(--accent)", fontStyle: "italic" }}>Golden Kubestronaut</em>.
         </h2>

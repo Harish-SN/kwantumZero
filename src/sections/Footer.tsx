@@ -8,48 +8,50 @@ export default function Footer() {
           ── 05 / contact
         </div>
 
+        {/* ✅ Updated heading */}
         <h2 style={{ marginBottom: 32, maxWidth: "14ch" }}>
           Found something worth discussing?
         </h2>
 
-        <a
-          href={`mailto:${profile.email}`}
-          style={{
-            display: "inline-block",
-            fontFamily: "var(--font-mono)",
-            fontSize: 14,
-            letterSpacing: "0.08em",
-            textTransform: "uppercase",
-            color: "var(--bg)",
-            background: "var(--accent)",
-            padding: "14px 22px",
-            border: "none",
-          }}
-        >
-          {profile.email} →
-        </a>
-
+        {/* 🔥 ALL LINKS IN ONE LINE (ALL HIGHLIGHTED) */}
         <div
           style={{
-            marginTop: 48,
             display: "flex",
             flexWrap: "wrap",
-            gap: 24,
+            gap: 16,
+            alignItems: "center",
             fontFamily: "var(--font-mono)",
-            fontSize: 12,
             letterSpacing: "0.08em",
             textTransform: "uppercase",
           }}
         >
+          {/* Email */}
+          <a
+            href={`mailto:${profile.email}`}
+            style={{
+              fontSize: 14,
+              color: "var(--bg)",
+              background: "var(--accent)",
+              padding: "14px 22px",
+              textDecoration: "none",
+            }}
+          >
+            {profile.email} →
+          </a>
+
+          {/* All socials (also highlighted now) */}
           {profile.socials.map((s) => (
             <a
               key={s.label}
               href={s.href}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               style={{
-                color: "var(--text-dim)",
-                borderBottom: "1px solid var(--line-soft)",
+                fontSize: 14,
+                color: "var(--bg)",
+                background: "var(--accent)",
+                padding: "14px 22px",
+                textDecoration: "none",
               }}
             >
               {s.label} ↗
@@ -57,11 +59,14 @@ export default function Footer() {
           ))}
         </div>
 
+        {/* Footer bottom */}
         <div
           style={{
             marginTop: 120,
             display: "flex",
             justifyContent: "space-between",
+            flexWrap: "wrap",
+            gap: 12,
             fontFamily: "var(--font-mono)",
             fontSize: 11,
             letterSpacing: "0.1em",
@@ -74,7 +79,20 @@ export default function Footer() {
           <span>
             © {new Date().getFullYear()} {profile.name}
           </span>
-          <span>Source:github.com/Harish-SN/kwantumZero</span>
+
+          {/* ✅ GitHub source */}
+          <a
+            href="https://github.com/Harish-SN/kwantumZero"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "var(--text-faint)",
+              textDecoration: "none",
+              borderBottom: "1px solid var(--line-soft)",
+            }}
+          >
+            Source: github.com/Harish-SN/kwantumZero
+          </a>
         </div>
       </div>
     </section>

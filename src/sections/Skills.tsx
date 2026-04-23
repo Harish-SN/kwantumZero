@@ -4,7 +4,7 @@ export default function Skills() {
   return (
     <section id="skills">
       <div className="shell">
-        <div className="label" style={{ marginBottom: 24 }}>── 04 / toolkit</div>
+        <div className="label" style={{ marginBottom: 24 }}>── 05 / toolkit</div>
         <h2 style={{ marginBottom: 56 }}>Toolkit.</h2>
 
         <div style={{ display: "grid", gap: 40 }}>

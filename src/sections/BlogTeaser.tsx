@@ -14,7 +14,7 @@ export default function BlogTeaser() {
       <div className="shell">
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 48 }}>
           <div>
-            <div className="label" style={{ marginBottom: 24 }}>── 05 / writing</div>
+            <div className="label" style={{ marginBottom: 24 }}>── 01 / writing</div>
             <h2>Recent posts.</h2>
           </div>
           <Link to="/blog" style={{ fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--accent)", borderBottom: "none" }}>
