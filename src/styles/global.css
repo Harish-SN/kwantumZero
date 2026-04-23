@@ -1,0 +1,129 @@
+:root {
+  /* Quantum palette — matches the vortex */
+  --bg: #020617;
+  --bg-elevated: #0a1026;
+  --accent: #f1fd00;
+  --accent-dim: rgba(241, 253, 0, 0.55);
+  --text: #e6ebff;
+  --text-dim: rgba(230, 235, 255, 0.62);
+  --text-faint: rgba(230, 235, 255, 0.35);
+  --line: rgba(241, 253, 0, 0.18);
+  --line-soft: rgba(230, 235, 255, 0.08);
+
+  --font-display: "Instrument Serif", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+
+  --maxw: 1120px;
+  --gutter: clamp(20px, 4vw, 48px);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: var(--bg);
+}
+
+body {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-dim);
+  transition: border-color 160ms ease, color 160ms ease;
+}
+a:hover {
+  border-color: var(--accent);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(48px, 9vw, 120px);
+  line-height: 0.95;
+}
+h2 {
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.05;
+}
+h3 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 1em;
+  color: var(--text-dim);
+  max-width: 62ch;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* Utility: mono label */
+.label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Layout shell */
+.shell {
+  position: relative;
+  z-index: 1;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* Section rhythm */
+section {
+  padding: clamp(80px, 14vh, 160px) 0;
+  border-top: 1px solid var(--line-soft);
+}
+section:first-of-type {
+  border-top: none;
+}
+.post-body {
+  font-family: var(--font-display);
+  font-size: 19px;
+  line-height: 1.7;
+  color: var(--text);
+}
+.post-body p { font-family: var(--font-display); font-size: 19px; line-height: 1.7; color: var(--text); margin: 0 0 1.4em; max-width: none; }
+.post-body h2 { font-family: var(--font-display); font-size: 32px; margin: 2.2em 0 0.8em; color: var(--text); }
+.post-body h3 { font-family: var(--font-display); font-size: 24px; margin: 1.8em 0 0.6em; color: var(--text); }
+.post-body a { color: var(--accent); border-bottom: 1px solid var(--accent-dim); }
+.post-body strong { color: var(--accent); font-weight: 500; font-style: italic; }
+.post-body ul, .post-body ol { padding-left: 1.2em; margin: 0 0 1.4em; }
+.post-body li { margin-bottom: 0.5em; }
+.post-body li::marker { color: var(--accent-dim); }
+.post-body code { font-family: var(--font-mono); font-size: 0.85em; color: var(--accent); background: rgba(241, 253, 0, 0.08); padding: 2px 6px; border-radius: 2px; }
+.post-body pre { background: var(--bg-elevated); border: 1px solid var(--line-soft); padding: 20px 22px; overflow-x: auto; margin: 1.8em 0; font-size: 13px; line-height: 1.55; }
+.post-body pre code { color: var(--text); background: transparent; padding: 0; }
