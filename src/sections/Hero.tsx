@@ -4,8 +4,15 @@ export default function Hero() {
   return (
     <section id="top" style={{ paddingTop: "22vh" }}>
       <div className="shell" style={{ display: "grid", gap: 28 }}>
-        <div className="label">
-          ── {profile.location} · {profile.role}
+        <div
+          style={{
+            fontFamily: "var(--font-mono)",
+            fontSize: 11,
+            letterSpacing: "0.08em",
+            color: "var(--accent)",
+          }}
+        >
+          ── {profile.role}
         </div>
 
         <h1 style={{ color: "var(--text)" }}>
@@ -29,7 +36,7 @@ export default function Hero() {
             textTransform: "uppercase",
           }}
         >
-          <a href={`mailto:${profile.email}`}>{profile.email}</a>
+          <a href={profile.emailHref}>{profile.email} ↗</a>
           {profile.socials.map((s) => (
             <a key={s.label} href={s.href} target="_blank" rel="noreferrer">
               {s.label} ↗
