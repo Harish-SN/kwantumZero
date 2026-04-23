@@ -1,4 +1,4 @@
-import matter from "gray-matter";
+import fm from "front-matter";
 import { marked } from "marked";
 
 export interface PostMeta {
@@ -13,6 +13,14 @@ export interface Post extends PostMeta {
   html: string;
 }
 
+interface FrontmatterAttrs {
+  title?: string;
+  date?: string;
+  summary?: string;
+  tags?: string[];
+  slug?: string;
+}
+
 const files = import.meta.glob("../posts/*.md", {
   query: "?raw",
   import: "default",
@@ -24,15 +32,15 @@ function slugFromPath(path: string): string {
 }
 
 function parsePost(path: string, raw: string): Post {
-  const { data, content } = matter(raw);
-  const slug = (data.slug as string) || slugFromPath(path);
+  const { attributes, body } = fm<FrontmatterAttrs>(raw);
+  const slug = attributes.slug || slugFromPath(path);
   return {
     slug,
-    title: (data.title as string) || slug,
-    date: (data.date as string) || new Date().toISOString().slice(0, 10),
-    summary: (data.summary as string) || "",
-    tags: (data.tags as string[]) || [],
-    html: marked.parse(content, { async: false }) as string,
+    title: attributes.title || slug,
+    date: attributes.date || new Date().toISOString().slice(0, 10),
+    summary: attributes.summary || "",
+    tags: attributes.tags || [],
+    html: marked.parse(body, { async: false }) as string,
   };
 }
 

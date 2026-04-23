@@ -12,19 +12,72 @@ export const profile = {
   ],
 };
 
-export const certifications = [
-  { code: "CKAD", name: "Certified Kubernetes Application Developer", status: "passed", year: "2025" },
-  { code: "CKA", name: "Certified Kubernetes Administrator", status: "in-progress", year: "2026" },
-  { code: "CKS", name: "Certified Kubernetes Security Specialist", status: "planned", year: "" },
-  { code: "KCNA", name: "Kubernetes and Cloud Native Associate", status: "planned", year: "" },
-  { code: "TF", name: "HashiCorp Terraform Associate", status: "planned", year: "" },
-  { code: "AWS-SAP", name: "AWS Solutions Architect Professional", status: "planned", year: "" },
-  { code: "GCP-PCA", name: "Google Cloud Professional Cloud Architect", status: "planned", year: "" },
-  { code: "CKS", name: "Certified Kubernetes Security Specialist", status: "planned", year: "" },
-  { code: "KCNA", name: "Kubernetes and Cloud Native Associate", status: "planned", year: "" },
-  { code: "TF", name: "HashiCorp Terraform Associate", status: "planned", year: "" },
-  { code: "AWS-SAP", name: "AWS Solutions Architect Professional", status: "planned", year: "" },
-  { code: "GCP-PCA", name: "Google Cloud Professional Cloud Architect", status: "planned", year: "" },
+export interface Certification {
+  code: string;
+  name: string;
+  issuer: string;
+  status: "passed" | "in-progress" | "planned";
+  year: string;
+  link?: string;
+  img?: string;
+}
+
+export const certifications: Certification[] = [
+  {
+    code: "CKAD",
+    name: "Certified Kubernetes Application Developer",
+    issuer: "Cloud Native Computing Foundation",
+    status: "passed",
+    year: "2025",
+  },
+  {
+    code: "KCNA",
+    name: "Kubernetes and Cloud Native Associate",
+    issuer: "Cloud Native Computing Foundation",
+    status: "passed",
+    year: "2026",
+    link: "https://www.credly.com/earner/earned/badge/547bdfe4-b9a7-42b1-bdcb-3acc2332f7be",
+    img: "/kcna.png",
+  },
+  {
+    code: "TF",
+    name: "HashiCorp Certified: Terraform Associate (004)",
+    issuer: "HashiCorp",
+    status: "passed",
+    year: "2026",
+    link: "https://www.credly.com/earner/earned/badge/e2dee9fd-c02f-40db-83a5-67af7e420994",
+    img: "/terraform-associate.png",
+  },
+  {
+    code: "AWS-SAP",
+    name: "AWS Certified Solutions Architect – Professional",
+    issuer: "Amazon Web Services",
+    status: "passed",
+    year: "2026",
+    link: "https://www.credly.com/earner/earned/badge/ded4dfbc-ca13-45f9-83f7-ddaffe6eea59",
+    img: "/aws-saa.png",
+  },
+  {
+    code: "CKA",
+    name: "Certified Kubernetes Administrator",
+    issuer: "Cloud Native Computing Foundation",
+    status: "in-progress",
+    year: "2026",
+  },
+  {
+    code: "CKS",
+    name: "Certified Kubernetes Security Specialist",
+    issuer: "Cloud Native Computing Foundation",
+    status: "planned",
+    year: "",
+  },
+  {
+    code: "GCP-PCA",
+    name: "Google Cloud Professional Cloud Architect",
+    issuer: "Google Cloud",
+    status: "planned",
+    year: "",
+  },
 ];
 
 export const experience = [
