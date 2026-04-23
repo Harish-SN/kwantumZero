@@ -4,10 +4,14 @@ export default function Footer() {
   return (
     <section id="contact" style={{ paddingBottom: 120 }}>
       <div className="shell">
-        <div className="label" style={{ marginBottom: 24 }}>── 05 / contact</div>
+        <div className="label" style={{ marginBottom: 24 }}>
+          ── 05 / contact
+        </div>
+
         <h2 style={{ marginBottom: 32, maxWidth: "14ch" }}>
-          Got a cluster that needs a hand?
+          Found something worth discussing?
         </h2>
+
         <a
           href={`mailto:${profile.email}`}
           style={{
@@ -20,11 +24,38 @@ export default function Footer() {
             background: "var(--accent)",
             padding: "14px 22px",
             border: "none",
-            borderBottom: "none",
           }}
         >
           {profile.email} →
         </a>
+
+        <div
+          style={{
+            marginTop: 48,
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 24,
+            fontFamily: "var(--font-mono)",
+            fontSize: 12,
+            letterSpacing: "0.08em",
+            textTransform: "uppercase",
+          }}
+        >
+          {profile.socials.map((s) => (
+            <a
+              key={s.label}
+              href={s.href}
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                color: "var(--text-dim)",
+                borderBottom: "1px solid var(--line-soft)",
+              }}
+            >
+              {s.label} ↗
+            </a>
+          ))}
+        </div>
 
         <div
           style={{
@@ -40,7 +71,9 @@ export default function Footer() {
             borderTop: "1px solid var(--line-soft)",
           }}
         >
-          <span>© {new Date().getFullYear()} {profile.name}</span>
+          <span>
+            © {new Date().getFullYear()} {profile.name}
+          </span>
           <span>Built with Vite · React · Three.js</span>
         </div>
       </div>
