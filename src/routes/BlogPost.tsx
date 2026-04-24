@@ -19,7 +19,7 @@ export default function BlogPost() {
   }
 
   return (
-    <article className="shell" style={{ paddingTop: "18vh", paddingBottom: 160, maxWidth: 720 }}>
+    <article className="shell" style={{ paddingTop: "18vh", paddingBottom: 160, maxWidth: 1200 }}>
       <Link to="/blog" style={{ fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--text-faint)", borderBottom: "none", display: "inline-block", marginBottom: 48 }}>
         ← Writing
       </Link>
