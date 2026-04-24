@@ -7,7 +7,7 @@ export default function Skills() {
         <div className="label" style={{ marginBottom: 24 }}>── 05 / toolkit</div>
         <h2 style={{ marginBottom: 56 }}>Toolkit.</h2>
 
-        <div style={{ display: "grid", gap: 40 }}>
+        <div style={{ display: "grid", gap: 10 }}>
           {Object.entries(skills).map(([group, items]) => (
             <div
               key={group}

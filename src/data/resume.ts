@@ -1,6 +1,6 @@
 export const profile = {
   name: "KwantumZero",
-  role: "// Harish Sudalaimani |ψ⟩",
+  role: "// Harish Sudalaimani",
   tagline:
     "Infrastructure today. Intelligence tomorrow. Kwantum after that.",
   email: "mail",
@@ -131,30 +131,13 @@ export const projects = [
 ];
 
 export const skills = {
-  "Containers & Orchestration": ["Kubernetes", "Docker", "Helm", "Amazon EKS", "AWS Fargate"],
-  "Cloud & AWS": [
-    "EC2",
-    "Auto Scaling",
-    "ALB",
-    "VPC",
-    "Route 53",
-    "S3",
-    "RDS",
-    "Aurora",
-    "Lambda",
-    "EventBridge",
-    "IAM",
-    "Cognito",
-    "Secrets Manager",
-    "CloudFront",
-    "CloudWatch",
-    "SQS",
-    "SNS",
-  ],
+  "Cloud": ["AWS", "Google Cloud"],
+  "Containers & Orchestration": ["Kubernetes", "Docker", "Helm"],
   "Infrastructure as Code": ["Terraform", "CloudFormation", "Ansible"],
-  "CI / CD & GitOps": ["GitHub Actions", "Jenkins", "GitLab CI", "AWS CodePipeline", "Argo CD", "Flux CD"],
-  "Observability": ["Prometheus", "Grafana", "CloudWatch", "OpenTelemetry"],
-  "Security & DevSecOps": ["IAM policies", "Least-privilege design", "VPC security", "Secrets management", "HTTPS/TLS"],
-  "Scripting & Automation": ["Python", "Bash"],
-  "Linux & Systems": ["Linux administration", "Networking", "Performance tuning", "Troubleshooting"],
+  "CI / CD & GitOps": ["GitHub Actions", "Jenkins", "Argo CD", "Flux CD"],
+  "Observability": ["Prometheus", "Grafana", "OpenTelemetry"],
+  "Security & DevSecOps": ["IAM", "Secrets management", "Network security", "TLS"],
+  "Languages": ["Go", "Python", "Bash"],
+  "Linux & Systems": ["Linux", "Networking", "Performance tuning"],
+  "Editor & Workflow": ["Neovim", "LazyVim", "tmux", "Git", "zsh"],
 };
