@@ -4,8 +4,8 @@ export default function Projects() {
   return (
     <section id="projects">
       <div className="shell">
-        <div className="label" style={{ marginBottom: 24 }}>── 02 / projects</div>
-        <h2 style={{ marginBottom: 56 }}>Open-source & lab work.</h2>
+        <div className="label" style={{ marginBottom: 24 }}>── 02 / commit history</div>
+        <h2 style={{ marginBottom: 56 }}>Things I've shipped.</h2>
 
         <div style={{ display: "grid", gap: 0 }}>
           {projects.map((p, i) => (
