@@ -32,7 +32,7 @@ export default function Footer() {
               fontSize: 14,
               color: "var(--bg)",
               background: "var(--accent)",
-              padding: "14px 22px",
+              padding: "1px 22px",
               textDecoration: "none",
             }}
           >
@@ -50,7 +50,7 @@ export default function Footer() {
                 fontSize: 14,
                 color: "var(--bg)",
                 background: "var(--accent)",
-                padding: "14px 22px",
+                padding: "1px 22px",
                 textDecoration: "none",
               }}
             >
@@ -72,7 +72,7 @@ export default function Footer() {
             letterSpacing: "0.1em",
             textTransform: "uppercase",
             color: "var(--text-faint)",
-            paddingTop: 24,
+            paddingTop: 1,
             borderTop: "1px solid var(--line-soft)",
           }}
         >
