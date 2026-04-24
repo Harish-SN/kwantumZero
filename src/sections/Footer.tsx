@@ -8,12 +8,12 @@ export default function Footer() {
           ── 05 / contact
         </div>
 
-        {/* ✅ Updated heading */}
-        <h2 style={{ marginBottom: 32, maxWidth: "14ch" }}>
+        {/* Updated heading */}
+        <h2 style={{ marginBottom: 69, maxWidth: "14ch" }}>
           Found something worth discussing?
         </h2>
 
-        {/* 🔥 ALL LINKS IN ONE LINE (ALL HIGHLIGHTED) */}
+        {/* ALL LINKS IN ONE LINE (ALL HIGHLIGHTED) */}
         <div
           style={{
             display: "flex",
@@ -80,7 +80,7 @@ export default function Footer() {
             © {new Date().getFullYear()} {profile.name}
           </span>
 
-          {/* ✅ GitHub source */}
+          {/* GitHub source */}
           <a
             href="https://github.com/Harish-SN/kwantumZero"
             target="_blank"

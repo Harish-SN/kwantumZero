@@ -5,9 +5,9 @@ export default function Experience() {
     <section id="experience">
       <div className="shell">
         <div className="label" style={{ marginBottom: 24 }}>── 04 / experience</div>
-        <h2 style={{ marginBottom: 56 }}>What I'm building.</h2>
+        <h2 style={{ marginBottom: 56 }}>Work history.</h2>
 
-        <div style={{ display: "grid", gap: 48 }}>
+        <div style={{ display: "grid", gap: 8 }}>
           {experience.map((e, i) => (
             <article
               key={i}
@@ -26,7 +26,7 @@ export default function Experience() {
                   letterSpacing: "0.14em",
                   textTransform: "uppercase",
                   color: "var(--accent)",
-                  paddingTop: 6,
+                  paddingTop: 1,
                 }}
               >
                 {e.period}

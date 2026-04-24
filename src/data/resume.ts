@@ -76,7 +76,7 @@ export const certifications: Certification[] = [
 
 export const experience = [
   {
-    period: "May 2024 — Mar 2026",
+    period: "May 2024 — Apr 2026",
     role: "Cloud & DevOps Engineer",
     org: "XamBook",
     bullets: [
@@ -89,7 +89,7 @@ export const experience = [
     ],
   },
   {
-    period: "May 2021 — Apr 2024",
+    period: "Oct 2022 — Apr 2024",
     role: "DevOps & Cloud Engineer",
     org: "Independent Consulting · Freelance",
     bullets: [
