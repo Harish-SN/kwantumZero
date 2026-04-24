@@ -15,8 +15,8 @@ export default function Projects() {
               style={{
                 display: "grid",
                 gridTemplateColumns: "minmax(180px, 240px) 1fr auto",
-                gap: 32,
-                padding: "28px 0",
+                gap: 1,
+                padding: "8px 0",
                 borderTop: i === 0 ? "1px solid var(--line-soft)" : "none",
                 borderBottom: "1px solid var(--line-soft)",
                 color: "var(--text)",

@@ -115,19 +115,7 @@ export const projects = [
     blurb: "Privacy-focused LAN-first chat app. Real-time messaging without cloud dependency — low-latency, offline-first communication within local networks.",
     stack: ["Networking", "Real-time", "Privacy"],
     href: "https://github.com/Harish-SN/Pinglo",
-  },
-  {
-    name: "harish8.com",
-    blurb: "React portfolio hosted on S3 + CloudFront with a serverless AWS Lambda backend for dynamic functionality.",
-    stack: ["React", "S3", "CloudFront", "Lambda"],
-    href: "https://harish8.com",
-  },
-  {
-    name: "DevBook & Sticky Notes",
-    blurb: "Lightweight web tools focused on fast access and clean UI. Responsive layouts with vanilla HTML, CSS, and JavaScript.",
-    stack: ["JavaScript", "HTML", "CSS"],
-    href: "https://github.com/Harish-SN",
-  },
+  }
 ];
 
 export const skills = {
